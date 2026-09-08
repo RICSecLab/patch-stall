@@ -1,0 +1,1095 @@
+{
+  "rq1_chi2": {
+    "chi2": 879.9,
+    "p": 8.532268397180317e-192,
+    "dof": 2
+  },
+  "rq1_chi2_eco_sev": {
+    "chi2": 1862.4,
+    "p": 0.0,
+    "dof": 13
+  },
+  "rq1_patch_rates": {
+    "CRITICAL": {
+      "npm": 0.524,
+      "PyPI": 0.869,
+      "Maven": 0.886,
+      "Overall": 0.753
+    },
+    "HIGH": {
+      "npm": 0.777,
+      "PyPI": 0.916,
+      "Maven": 0.876,
+      "Overall": 0.861
+    },
+    "MEDIUM": {
+      "npm": 0.873,
+      "PyPI": 0.937,
+      "Maven": 0.84,
+      "Overall": 0.881
+    },
+    "LOW": {
+      "npm": 0.867,
+      "PyPI": 0.97,
+      "Maven": 0.775,
+      "Overall": 0.909
+    },
+    "Overall": {
+      "npm": 0.763,
+      "PyPI": 0.93,
+      "Maven": 0.855,
+      "Overall": 0.859
+    }
+  },
+  "rq1_sample_sizes": {
+    "npm": 6391,
+    "PyPI": 9244,
+    "Maven": 10653
+  },
+  "rq1_total_advisories": 26288,
+  "rq1_date_source_breakdown": {
+    "Maven_git_tag": 4477,
+    "Maven_registry": 14,
+    "PyPI_git_tag": 4655,
+    "PyPI_registry": 2977,
+    "npm_git_tag": 439,
+    "npm_registry": 3877
+  },
+  "rq1_km": {
+    "npm": {
+      "n": 5833,
+      "events": 4316,
+      "median": 0.5
+    },
+    "PyPI": {
+      "n": 8276,
+      "events": 7632,
+      "median": 0.5
+    },
+    "Maven": {
+      "n": 6036,
+      "events": 4491,
+      "median": 0.5
+    }
+  },
+  "rq1_logrank": {
+    "npm_vs_PyPI": {
+      "chi2": 661.6,
+      "p": 0.0
+    },
+    "npm_vs_Maven": {
+      "chi2": 0.2,
+      "p": 0.644459
+    },
+    "PyPI_vs_Maven": {
+      "chi2": 680.1,
+      "p": 0.0
+    }
+  },
+  "rq1_stratified_cox": {
+    "n": 15092,
+    "events": 14481,
+    "concordance": 0.744,
+    "covariates": {
+      "is_critical": {
+        "HR": 0.92,
+        "p": 0.0025,
+        "CI": [
+          0.871,
+          0.971
+        ]
+      },
+      "is_high": {
+        "HR": 1.053,
+        "p": 0.0077,
+        "CI": [
+          1.014,
+          1.093
+        ]
+      },
+      "is_low": {
+        "HR": 0.427,
+        "p": 0.0,
+        "CI": [
+          0.403,
+          0.452
+        ]
+      },
+      "log_contributors": {
+        "HR": 1.06,
+        "p": 0.0,
+        "CI": [
+          1.041,
+          1.08
+        ]
+      },
+      "log_stars": {
+        "HR": 0.975,
+        "p": 0.0,
+        "CI": [
+          0.963,
+          0.986
+        ]
+      },
+      "age_years": {
+        "HR": 1.008,
+        "p": 0.0039,
+        "CI": [
+          1.003,
+          1.013
+        ]
+      }
+    },
+    "eco_breakdown": {
+      "npm": {
+        "n": 3244,
+        "events": 3099
+      },
+      "PyPI": {
+        "n": 7042,
+        "events": 6894
+      },
+      "Maven": {
+        "n": 4806,
+        "events": 4488
+      }
+    }
+  },
+  "rq1_schoenfeld": {
+    "is_critical": {
+      "chi2": 14.539,
+      "p": 0.0001,
+      "violation": true
+    },
+    "is_high": {
+      "chi2": 0.418,
+      "p": 0.5179,
+      "violation": false
+    },
+    "is_low": {
+      "chi2": 139.198,
+      "p": 0.0,
+      "violation": true
+    },
+    "log_contributors": {
+      "chi2": 1.602,
+      "p": 0.2056,
+      "violation": false
+    },
+    "log_stars": {
+      "chi2": 0.897,
+      "p": 0.3437,
+      "violation": false
+    },
+    "age_years": {
+      "chi2": 1.052,
+      "p": 0.305,
+      "violation": false
+    }
+  },
+  "rq2_nb": {
+    "n": 2982,
+    "model1_aic": 12059.1,
+    "model1_covariates": {
+      "log_stars": {
+        "IRR": 1.008,
+        "p": 0.4728,
+        "CI": [
+          0.986,
+          1.032
+        ]
+      },
+      "log_contribs": {
+        "IRR": 1.433,
+        "p": 0.0,
+        "CI": [
+          1.376,
+          1.493
+        ]
+      },
+      "age_years": {
+        "IRR": 1.018,
+        "p": 0.002,
+        "CI": [
+          1.007,
+          1.03
+        ]
+      }
+    },
+    "model2_aic": 12026.4,
+    "model2_covariates": {
+      "log_stars": {
+        "IRR": 1.04,
+        "p": 0.002,
+        "CI": [
+          1.014,
+          1.066
+        ]
+      },
+      "log_contribs": {
+        "IRR": 1.365,
+        "p": 0.0,
+        "CI": [
+          1.307,
+          1.426
+        ]
+      },
+      "age_years": {
+        "IRR": 1.011,
+        "p": 0.0775,
+        "CI": [
+          0.999,
+          1.023
+        ]
+      },
+      "is_pypi": {
+        "IRR": 1.189,
+        "p": 0.0022,
+        "CI": [
+          1.064,
+          1.328
+        ]
+      },
+      "is_maven": {
+        "IRR": 1.439,
+        "p": 0.0,
+        "CI": [
+          1.285,
+          1.613
+        ]
+      }
+    }
+  },
+  "rq3_combined_n": {
+    "total": 126266,
+    "npm": 18102,
+    "PyPI": 32822,
+    "Maven": 75342
+  },
+  "rq3_constraint_mapping": {
+    "npm": [
+      {
+        "constraint_type": "any",
+        "constraint_abstract": "wildcard",
+        "count": 99
+      },
+      {
+        "constraint_type": "caret",
+        "constraint_abstract": "permissive",
+        "count": 15959
+      },
+      {
+        "constraint_type": "exact",
+        "constraint_abstract": "pinned",
+        "count": 1622
+      },
+      {
+        "constraint_type": "other",
+        "constraint_abstract": "wildcard",
+        "count": 62
+      },
+      {
+        "constraint_type": "range",
+        "constraint_abstract": "permissive",
+        "count": 39
+      },
+      {
+        "constraint_type": "tilde",
+        "constraint_abstract": "restrictive",
+        "count": 321
+      }
+    ],
+    "PyPI": [
+      {
+        "constraint_type": "compatible",
+        "constraint_abstract": "restrictive",
+        "count": 841
+      },
+      {
+        "constraint_type": "exclusion",
+        "constraint_abstract": "wildcard",
+        "count": 4
+      },
+      {
+        "constraint_type": "lower_bound",
+        "constraint_abstract": "permissive",
+        "count": 517
+      },
+      {
+        "constraint_type": "other",
+        "constraint_abstract": "wildcard",
+        "count": 234
+      },
+      {
+        "constraint_type": "pinned",
+        "constraint_abstract": "pinned",
+        "count": 25397
+      },
+      {
+        "constraint_type": "range",
+        "constraint_abstract": "permissive",
+        "count": 5387
+      },
+      {
+        "constraint_type": "upper_bound",
+        "constraint_abstract": "permissive",
+        "count": 442
+      }
+    ],
+    "Maven": [
+      {
+        "constraint_type": "other",
+        "constraint_abstract": "wildcard",
+        "count": 9
+      },
+      {
+        "constraint_type": "pinned",
+        "constraint_abstract": "pinned",
+        "count": 29
+      },
+      {
+        "constraint_type": "range",
+        "constraint_abstract": "permissive",
+        "count": 131
+      },
+      {
+        "constraint_type": "soft",
+        "constraint_abstract": "pinned",
+        "count": 75173
+      }
+    ]
+  },
+  "rq3_constraint_abstract_totals": {
+    "permissive": 22475,
+    "pinned": 102221,
+    "restrictive": 1162,
+    "wildcard": 408
+  },
+  "rq3_autoprop_by_eco": {
+    "npm": {
+      "auto": 4749,
+      "manual": 678,
+      "censored": 12675,
+      "total": 18102,
+      "auto_rate": 0.2623
+    },
+    "PyPI": {
+      "auto": 1113,
+      "manual": 12154,
+      "censored": 19555,
+      "total": 32822,
+      "auto_rate": 0.0339
+    },
+    "Maven": {
+      "auto": 4,
+      "manual": 43855,
+      "censored": 31483,
+      "total": 75342,
+      "auto_rate": 0.0001
+    }
+  },
+  "rq3_autoprop_cross": {
+    "permissive": {
+      "npm": {
+        "n": 15998,
+        "auto_rate": 0.2855
+      },
+      "PyPI": {
+        "n": 6346,
+        "auto_rate": 0.1703
+      },
+      "Maven": {
+        "n": 131,
+        "auto_rate": 0.0153
+      }
+    },
+    "restrictive": {
+      "npm": {
+        "n": 321,
+        "auto_rate": 0.0654
+      },
+      "PyPI": {
+        "n": 841,
+        "auto_rate": 0.0202
+      },
+      "Maven": {
+        "n": 0,
+        "auto_rate": null
+      }
+    },
+    "pinned": {
+      "npm": {
+        "n": 1622,
+        "auto_rate": 0.0043
+      },
+      "PyPI": {
+        "n": 25397,
+        "auto_rate": 0.0002
+      },
+      "Maven": {
+        "n": 75202,
+        "auto_rate": 0.0
+      }
+    },
+    "wildcard": {
+      "npm": {
+        "n": 161,
+        "auto_rate": 0.9503
+      },
+      "PyPI": {
+        "n": 238,
+        "auto_rate": 0.0378
+      },
+      "Maven": {
+        "n": 9,
+        "auto_rate": 0.0
+      }
+    }
+  },
+  "rq3_km_propagation": {
+    "npm": {
+      "n": 13295,
+      "events": 678,
+      "median": null
+    },
+    "PyPI": {
+      "n": 31136,
+      "events": 11589,
+      "median": null
+    },
+    "Maven": {
+      "n": 55545,
+      "events": 24063,
+      "median": null
+    }
+  },
+  "rq3_logrank_propagation": {
+    "npm_vs_PyPI": {
+      "chi2": 2758.4,
+      "p": 0.0
+    },
+    "npm_vs_Maven": {
+      "chi2": 4154.2,
+      "p": 0.0
+    },
+    "PyPI_vs_Maven": {
+      "chi2": 273.8,
+      "p": 0.0
+    }
+  },
+  "rq3_model_a": {
+    "n": 99976,
+    "events": 36330,
+    "concordance": 0.512,
+    "covariates": {
+      "is_permissive": {
+        "HR": 1.365,
+        "p": 0.0,
+        "CI": [
+          1.241,
+          1.5
+        ]
+      },
+      "is_restrictive": {
+        "HR": 1.154,
+        "p": 0.0058,
+        "CI": [
+          1.042,
+          1.277
+        ]
+      },
+      "is_runtime": {
+        "HR": 1.08,
+        "p": 0.3629,
+        "CI": [
+          0.915,
+          1.275
+        ]
+      },
+      "requires_major": {
+        "HR": 0.702,
+        "p": 0.0001,
+        "CI": [
+          0.588,
+          0.837
+        ]
+      },
+      "cvss_score": {
+        "HR": 1.006,
+        "p": 0.6497,
+        "CI": [
+          0.979,
+          1.034
+        ]
+      }
+    }
+  },
+  "rq3_model_b": {
+    "n": 69937,
+    "events": 23629,
+    "concordance": 0.533,
+    "covariates": {
+      "is_permissive": {
+        "HR": 1.391,
+        "p": 0.0,
+        "CI": [
+          1.259,
+          1.538
+        ]
+      },
+      "is_restrictive": {
+        "HR": 1.117,
+        "p": 0.0496,
+        "CI": [
+          1.0,
+          1.247
+        ]
+      },
+      "is_runtime": {
+        "HR": 0.966,
+        "p": 0.726,
+        "CI": [
+          0.797,
+          1.171
+        ]
+      },
+      "requires_major": {
+        "HR": 0.799,
+        "p": 0.0373,
+        "CI": [
+          0.647,
+          0.987
+        ]
+      },
+      "cvss_score": {
+        "HR": 0.999,
+        "p": 0.9723,
+        "CI": [
+          0.967,
+          1.033
+        ]
+      },
+      "log_contributors": {
+        "HR": 0.916,
+        "p": 0.0142,
+        "CI": [
+          0.854,
+          0.983
+        ]
+      },
+      "log_stars": {
+        "HR": 1.009,
+        "p": 0.7497,
+        "CI": [
+          0.956,
+          1.064
+        ]
+      }
+    },
+    "eco_breakdown": {
+      "npm": {
+        "n": 10299,
+        "events": 570
+      },
+      "PyPI": {
+        "n": 27257,
+        "events": 10168
+      },
+      "Maven": {
+        "n": 32381,
+        "events": 12891
+      }
+    }
+  },
+  "rq3_model_a_restricted": {
+    "n": 69937,
+    "events": 23629,
+    "concordance": 0.51,
+    "covariates": {
+      "is_permissive": {
+        "HR": 1.417,
+        "p": 0.0,
+        "CI": [
+          1.286,
+          1.562
+        ]
+      },
+      "is_restrictive": {
+        "HR": 1.182,
+        "p": 0.0037,
+        "CI": [
+          1.056,
+          1.324
+        ]
+      },
+      "is_runtime": {
+        "HR": 1.007,
+        "p": 0.9443,
+        "CI": [
+          0.829,
+          1.224
+        ]
+      },
+      "requires_major": {
+        "HR": 0.803,
+        "p": 0.0404,
+        "CI": [
+          0.651,
+          0.99
+        ]
+      },
+      "cvss_score": {
+        "HR": 1.002,
+        "p": 0.8908,
+        "CI": [
+          0.97,
+          1.036
+        ]
+      }
+    }
+  },
+  "rq3_schoenfeld": {
+    "is_permissive": {
+      "chi2": 0.015,
+      "p": 0.9022,
+      "violation": false
+    },
+    "is_restrictive": {
+      "chi2": 0.921,
+      "p": 0.3373,
+      "violation": false
+    },
+    "is_runtime": {
+      "chi2": 0.0,
+      "p": 0.9884,
+      "violation": false
+    },
+    "requires_major": {
+      "chi2": 1.218,
+      "p": 0.2698,
+      "violation": false
+    },
+    "cvss_score": {
+      "chi2": 0.281,
+      "p": 0.5963,
+      "violation": false
+    },
+    "log_contributors": {
+      "chi2": 0.687,
+      "p": 0.4072,
+      "violation": false
+    },
+    "log_stars": {
+      "chi2": 0.979,
+      "p": 0.3224,
+      "violation": false
+    }
+  },
+  "rq3_tost_pooled": {
+    "pooled_log_contributors_delta25": {
+      "HR": 0.916,
+      "beta": -0.0877,
+      "SE": 0.0358,
+      "CI90": [
+        0.864,
+        0.972
+      ],
+      "p_tost": 0.0001,
+      "equivalent": true,
+      "delta_hr": 0.25
+    },
+    "pooled_log_stars_delta25": {
+      "HR": 1.009,
+      "beta": 0.0087,
+      "SE": 0.0272,
+      "CI90": [
+        0.965,
+        1.055
+      ],
+      "p_tost": 0.0,
+      "equivalent": true,
+      "delta_hr": 0.25
+    },
+    "pooled_log_contributors_delta20": {
+      "HR": 0.916,
+      "beta": -0.0877,
+      "SE": 0.0358,
+      "CI90": [
+        0.864,
+        0.972
+      ],
+      "p_tost": 0.0041,
+      "equivalent": true,
+      "delta_hr": 0.2
+    },
+    "pooled_log_stars_delta20": {
+      "HR": 1.009,
+      "beta": 0.0087,
+      "SE": 0.0272,
+      "CI90": [
+        0.965,
+        1.055
+      ],
+      "p_tost": 0.0,
+      "equivalent": true,
+      "delta_hr": 0.2
+    },
+    "pooled_log_contributors_delta15": {
+      "HR": 0.916,
+      "beta": -0.0877,
+      "SE": 0.0358,
+      "CI90": [
+        0.864,
+        0.972
+      ],
+      "p_tost": 0.0726,
+      "equivalent": false,
+      "delta_hr": 0.15
+    },
+    "pooled_log_stars_delta15": {
+      "HR": 1.009,
+      "beta": 0.0087,
+      "SE": 0.0272,
+      "CI90": [
+        0.965,
+        1.055
+      ],
+      "p_tost": 0.0,
+      "equivalent": true,
+      "delta_hr": 0.15
+    }
+  },
+  "rq3_power_pooled": {
+    "log_contributors": {
+      "sd": 1.533,
+      "min_detectable_hr_upper": 1.012,
+      "min_detectable_hr_lower": 0.988,
+      "events_needed_hr109": 450,
+      "events_needed_hr080": 68
+    },
+    "log_stars": {
+      "sd": 2.174,
+      "min_detectable_hr_upper": 1.008,
+      "min_detectable_hr_lower": 0.992,
+      "events_needed_hr109": 224,
+      "events_needed_hr080": 34
+    }
+  },
+  "rq3_tost_per_ecosystem": {
+    "npm": {
+      "n": 10299,
+      "events": 570,
+      "concordance": 0.595,
+      "covariates_used": [
+        "is_permissive",
+        "is_restrictive",
+        "is_runtime",
+        "requires_major",
+        "cvss_score",
+        "log_contributors",
+        "log_stars"
+      ],
+      "coef_is_permissive": {
+        "HR": 0.795,
+        "p": 0.1127,
+        "CI": [
+          0.598,
+          1.056
+        ]
+      },
+      "coef_is_restrictive": {
+        "HR": 1.163,
+        "p": 0.5234,
+        "CI": [
+          0.731,
+          1.85
+        ]
+      },
+      "coef_is_runtime": {
+        "HR": 0.947,
+        "p": 0.6624,
+        "CI": [
+          0.742,
+          1.209
+        ]
+      },
+      "coef_requires_major": {
+        "HR": 0.645,
+        "p": 0.0035,
+        "CI": [
+          0.48,
+          0.866
+        ]
+      },
+      "coef_cvss_score": {
+        "HR": 0.991,
+        "p": 0.8385,
+        "CI": [
+          0.904,
+          1.085
+        ]
+      },
+      "coef_log_contributors": {
+        "HR": 0.965,
+        "p": 0.3493,
+        "CI": [
+          0.896,
+          1.04
+        ]
+      },
+      "coef_log_stars": {
+        "HR": 0.982,
+        "p": 0.3972,
+        "CI": [
+          0.943,
+          1.024
+        ]
+      },
+      "log_contributors_delta25": {
+        "HR": 0.965,
+        "beta": -0.0355,
+        "SE": 0.038,
+        "CI90": [
+          0.907,
+          1.027
+        ],
+        "p_tost": 0.0,
+        "equivalent": true
+      },
+      "log_stars_delta25": {
+        "HR": 0.982,
+        "beta": -0.0178,
+        "SE": 0.0211,
+        "CI90": [
+          0.949,
+          1.017
+        ],
+        "p_tost": 0.0,
+        "equivalent": true
+      },
+      "log_contributors_delta20": {
+        "HR": 0.965,
+        "beta": -0.0355,
+        "SE": 0.038,
+        "CI90": [
+          0.907,
+          1.027
+        ],
+        "p_tost": 0.0001,
+        "equivalent": true
+      },
+      "log_stars_delta20": {
+        "HR": 0.982,
+        "beta": -0.0178,
+        "SE": 0.0211,
+        "CI90": [
+          0.949,
+          1.017
+        ],
+        "p_tost": 0.0,
+        "equivalent": true
+      }
+    },
+    "PyPI": {
+      "n": 27257,
+      "events": 10168,
+      "concordance": 0.565,
+      "covariates_used": [
+        "is_permissive",
+        "is_restrictive",
+        "requires_major",
+        "cvss_score",
+        "log_contributors",
+        "log_stars"
+      ],
+      "coef_is_permissive": {
+        "HR": 1.443,
+        "p": 0.0,
+        "CI": [
+          1.32,
+          1.578
+        ]
+      },
+      "coef_is_restrictive": {
+        "HR": 1.097,
+        "p": 0.1022,
+        "CI": [
+          0.982,
+          1.226
+        ]
+      },
+      "coef_requires_major": {
+        "HR": 0.912,
+        "p": 0.4008,
+        "CI": [
+          0.735,
+          1.131
+        ]
+      },
+      "coef_cvss_score": {
+        "HR": 1.021,
+        "p": 0.0713,
+        "CI": [
+          0.998,
+          1.044
+        ]
+      },
+      "coef_log_contributors": {
+        "HR": 0.986,
+        "p": 0.677,
+        "CI": [
+          0.924,
+          1.052
+        ]
+      },
+      "coef_log_stars": {
+        "HR": 0.953,
+        "p": 0.0799,
+        "CI": [
+          0.903,
+          1.006
+        ]
+      },
+      "log_contributors_delta25": {
+        "HR": 0.986,
+        "beta": -0.0138,
+        "SE": 0.0331,
+        "CI90": [
+          0.934,
+          1.042
+        ],
+        "p_tost": 0.0,
+        "equivalent": true
+      },
+      "log_stars_delta25": {
+        "HR": 0.953,
+        "beta": -0.0482,
+        "SE": 0.0275,
+        "CI90": [
+          0.911,
+          0.997
+        ],
+        "p_tost": 0.0,
+        "equivalent": true
+      },
+      "log_contributors_delta20": {
+        "HR": 0.986,
+        "beta": -0.0138,
+        "SE": 0.0331,
+        "CI90": [
+          0.934,
+          1.042
+        ],
+        "p_tost": 0.0,
+        "equivalent": true
+      },
+      "log_stars_delta20": {
+        "HR": 0.953,
+        "beta": -0.0482,
+        "SE": 0.0275,
+        "CI90": [
+          0.911,
+          0.997
+        ],
+        "p_tost": 0.0,
+        "equivalent": true
+      }
+    },
+    "Maven": {
+      "n": 32381,
+      "events": 12891,
+      "concordance": 0.527,
+      "covariates_used": [
+        "is_permissive",
+        "requires_major",
+        "cvss_score",
+        "log_contributors",
+        "log_stars"
+      ],
+      "coef_is_permissive": {
+        "HR": 0.536,
+        "p": 0.035,
+        "CI": [
+          0.3,
+          0.957
+        ]
+      },
+      "coef_requires_major": {
+        "HR": 0.71,
+        "p": 0.1357,
+        "CI": [
+          0.452,
+          1.114
+        ]
+      },
+      "coef_cvss_score": {
+        "HR": 0.988,
+        "p": 0.6705,
+        "CI": [
+          0.935,
+          1.044
+        ]
+      },
+      "coef_log_contributors": {
+        "HR": 0.886,
+        "p": 0.0777,
+        "CI": [
+          0.775,
+          1.013
+        ]
+      },
+      "coef_log_stars": {
+        "HR": 1.03,
+        "p": 0.4632,
+        "CI": [
+          0.951,
+          1.115
+        ]
+      },
+      "log_contributors_delta25": {
+        "HR": 0.886,
+        "beta": -0.1207,
+        "SE": 0.0684,
+        "CI90": [
+          0.792,
+          0.992
+        ],
+        "p_tost": 0.0671,
+        "equivalent": false
+      },
+      "log_stars_delta25": {
+        "HR": 1.03,
+        "beta": 0.0298,
+        "SE": 0.0406,
+        "CI90": [
+          0.964,
+          1.101
+        ],
+        "p_tost": 0.0,
+        "equivalent": true
+      },
+      "log_contributors_delta20": {
+        "HR": 0.886,
+        "beta": -0.1207,
+        "SE": 0.0684,
+        "CI90": [
+          0.792,
+          0.992
+        ],
+        "p_tost": 0.1838,
+        "equivalent": false
+      },
+      "log_stars_delta20": {
+        "HR": 1.03,
+        "beta": 0.0298,
+        "SE": 0.0406,
+        "CI90": [
+          0.964,
+          1.101
+        ],
+        "p_tost": 0.0001,
+        "equivalent": true
+      }
+    }
+  }
+}

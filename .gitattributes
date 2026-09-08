@@ -1,0 +1,3 @@
+# Ship byte-identical files on every platform: the SHA-256 hashes in
+# data/release/manifest.json are computed over these exact bytes.
+* -text

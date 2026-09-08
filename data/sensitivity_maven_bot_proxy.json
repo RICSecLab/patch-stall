@@ -1,0 +1,815 @@
+{
+  "description": "Maven bot-contamination proxy (<=1-day propagation) and robustness re-fit excluding <=1-day manual events.",
+  "freeze_date": "2026-03-07",
+  "one_day_threshold": 1.0,
+  "descriptive_proxy": {
+    "npm": {
+      "total_events": 18102,
+      "manual": 678,
+      "manual_rate_of_total": 0.0375,
+      "manual_same_day": 0,
+      "manual_le1day": 34,
+      "same_day_frac_of_manual": 0.0,
+      "le1day_frac_of_manual": 0.0501
+    },
+    "PyPI": {
+      "total_events": 32822,
+      "manual": 12154,
+      "manual_rate_of_total": 0.3703,
+      "manual_same_day": 565,
+      "manual_le1day": 841,
+      "same_day_frac_of_manual": 0.0465,
+      "le1day_frac_of_manual": 0.0692
+    },
+    "Maven": {
+      "total_events": 75342,
+      "manual": 43855,
+      "manual_rate_of_total": 0.5821,
+      "manual_same_day": 19792,
+      "manual_le1day": 20356,
+      "same_day_frac_of_manual": 0.4513,
+      "le1day_frac_of_manual": 0.4642
+    }
+  },
+  "measured_bot_rates": {
+    "npm": {
+      "sampled_total": 352,
+      "bots": 25,
+      "classified": 314,
+      "unknown": 38,
+      "bot_rate_total_denominator": 0.071,
+      "bot_rate_among_classified": 0.0796
+    },
+    "PyPI": {
+      "sampled_total": 500,
+      "bots": 62,
+      "classified": 382,
+      "unknown": 118,
+      "bot_rate_total_denominator": 0.124,
+      "bot_rate_among_classified": 0.1623
+    },
+    "Maven": {
+      "sampled_total": 499,
+      "classified": 0,
+      "unknown": 499,
+      "note": "unclassifiable: Maven Central does not reliably expose SCM URLs"
+    }
+  },
+  "extreme_bound_manual_rate": {
+    "npm": {
+      "manual_after_removing_le1day": 644,
+      "manual_rate_after_removing_le1day": 0.0356
+    },
+    "PyPI": {
+      "manual_after_removing_le1day": 11313,
+      "manual_rate_after_removing_le1day": 0.3447
+    },
+    "Maven": {
+      "manual_after_removing_le1day": 23499,
+      "manual_rate_after_removing_le1day": 0.3119
+    },
+    "ordering": {
+      "worst_case_rates": {
+        "npm": 0.0356,
+        "PyPI": 0.3447,
+        "Maven": 0.3119
+      },
+      "maven_ge_pypi": false,
+      "pypi_gt_npm": true,
+      "ordering_preserved": false
+    }
+  },
+  "refit_excluding_le1day_manual": {
+    "margins": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    "pooled": {
+      "n": 69252,
+      "events": 22944,
+      "concordance": 0.537,
+      "log_contributors": {
+        "HR": 0.9152,
+        "beta": -0.0886,
+        "SE": 0.0367,
+        "results": [
+          {
+            "p_lower": 0.427502,
+            "p_upper": 0.0,
+            "p_tost": 0.427502,
+            "equivalent": false,
+            "CI90_beta": [
+              -0.149,
+              -0.0282
+            ],
+            "CI90_HR": [
+              0.8616,
+              0.9721
+            ],
+            "delta_log": 0.0953,
+            "delta": 0.1
+          },
+          {
+            "p_lower": 0.081625,
+            "p_upper": 0.0,
+            "p_tost": 0.081625,
+            "equivalent": false,
+            "CI90_beta": [
+              -0.149,
+              -0.0282
+            ],
+            "CI90_HR": [
+              0.8616,
+              0.9721
+            ],
+            "delta_log": 0.1398,
+            "delta": 0.15
+          },
+          {
+            "p_lower": 0.005323,
+            "p_upper": 0.0,
+            "p_tost": 0.005323,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.149,
+              -0.0282
+            ],
+            "CI90_HR": [
+              0.8616,
+              0.9721
+            ],
+            "delta_log": 0.1823,
+            "delta": 0.2
+          },
+          {
+            "p_lower": 0.000123,
+            "p_upper": 0.0,
+            "p_tost": 0.000123,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.149,
+              -0.0282
+            ],
+            "CI90_HR": [
+              0.8616,
+              0.9721
+            ],
+            "delta_log": 0.2231,
+            "delta": 0.25
+          },
+          {
+            "p_lower": 1e-06,
+            "p_upper": 0.0,
+            "p_tost": 1e-06,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.149,
+              -0.0282
+            ],
+            "CI90_HR": [
+              0.8616,
+              0.9721
+            ],
+            "delta_log": 0.2624,
+            "delta": 0.3
+          }
+        ]
+      },
+      "log_stars": {
+        "HR": 1.0078,
+        "beta": 0.0077,
+        "SE": 0.0278,
+        "results": [
+          {
+            "p_lower": 0.000105,
+            "p_upper": 0.000816,
+            "p_tost": 0.000816,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.038,
+              0.0535
+            ],
+            "CI90_HR": [
+              0.9627,
+              1.0549
+            ],
+            "delta_log": 0.0953,
+            "delta": 0.1
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 1e-06,
+            "p_tost": 1e-06,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.038,
+              0.0535
+            ],
+            "CI90_HR": [
+              0.9627,
+              1.0549
+            ],
+            "delta_log": 0.1398,
+            "delta": 0.15
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.038,
+              0.0535
+            ],
+            "CI90_HR": [
+              0.9627,
+              1.0549
+            ],
+            "delta_log": 0.1823,
+            "delta": 0.2
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.038,
+              0.0535
+            ],
+            "CI90_HR": [
+              0.9627,
+              1.0549
+            ],
+            "delta_log": 0.2231,
+            "delta": 0.25
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.038,
+              0.0535
+            ],
+            "CI90_HR": [
+              0.9627,
+              1.0549
+            ],
+            "delta_log": 0.2624,
+            "delta": 0.3
+          }
+        ]
+      }
+    },
+    "npm": {
+      "n": 10271,
+      "events": 542,
+      "concordance": 0.592,
+      "log_contributors": {
+        "HR": 0.9593,
+        "beta": -0.0416,
+        "SE": 0.0365,
+        "results": [
+          {
+            "p_lower": 0.070361,
+            "p_upper": 8.8e-05,
+            "p_tost": 0.070361,
+            "equivalent": false,
+            "CI90_beta": [
+              -0.1016,
+              0.0185
+            ],
+            "CI90_HR": [
+              0.9034,
+              1.0186
+            ],
+            "delta_log": 0.0953,
+            "delta": 0.1
+          },
+          {
+            "p_lower": 0.00356,
+            "p_upper": 0.0,
+            "p_tost": 0.00356,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.1016,
+              0.0185
+            ],
+            "CI90_HR": [
+              0.9034,
+              1.0186
+            ],
+            "delta_log": 0.1398,
+            "delta": 0.15
+          },
+          {
+            "p_lower": 5.7e-05,
+            "p_upper": 0.0,
+            "p_tost": 5.7e-05,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.1016,
+              0.0185
+            ],
+            "CI90_HR": [
+              0.9034,
+              1.0186
+            ],
+            "delta_log": 0.1823,
+            "delta": 0.2
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.1016,
+              0.0185
+            ],
+            "CI90_HR": [
+              0.9034,
+              1.0186
+            ],
+            "delta_log": 0.2231,
+            "delta": 0.25
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.1016,
+              0.0185
+            ],
+            "CI90_HR": [
+              0.9034,
+              1.0186
+            ],
+            "delta_log": 0.2624,
+            "delta": 0.3
+          }
+        ]
+      },
+      "log_stars": {
+        "HR": 0.9796,
+        "beta": -0.0206,
+        "SE": 0.0196,
+        "results": [
+          {
+            "p_lower": 6.6e-05,
+            "p_upper": 0.0,
+            "p_tost": 6.6e-05,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0527,
+              0.0116
+            ],
+            "CI90_HR": [
+              0.9486,
+              1.0116
+            ],
+            "delta_log": 0.0953,
+            "delta": 0.1
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0527,
+              0.0116
+            ],
+            "CI90_HR": [
+              0.9486,
+              1.0116
+            ],
+            "delta_log": 0.1398,
+            "delta": 0.15
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0527,
+              0.0116
+            ],
+            "CI90_HR": [
+              0.9486,
+              1.0116
+            ],
+            "delta_log": 0.1823,
+            "delta": 0.2
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0527,
+              0.0116
+            ],
+            "CI90_HR": [
+              0.9486,
+              1.0116
+            ],
+            "delta_log": 0.2231,
+            "delta": 0.25
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0527,
+              0.0116
+            ],
+            "CI90_HR": [
+              0.9486,
+              1.0116
+            ],
+            "delta_log": 0.2624,
+            "delta": 0.3
+          }
+        ]
+      }
+    },
+    "PyPI": {
+      "n": 27026,
+      "events": 9937,
+      "concordance": 0.561,
+      "log_contributors": {
+        "HR": 0.9904,
+        "beta": -0.0096,
+        "SE": 0.0323,
+        "results": [
+          {
+            "p_lower": 0.004034,
+            "p_upper": 0.000585,
+            "p_tost": 0.004034,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0628,
+              0.0435
+            ],
+            "CI90_HR": [
+              0.9391,
+              1.0445
+            ],
+            "delta_log": 0.0953,
+            "delta": 0.1
+          },
+          {
+            "p_lower": 2.9e-05,
+            "p_upper": 2e-06,
+            "p_tost": 2.9e-05,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0628,
+              0.0435
+            ],
+            "CI90_HR": [
+              0.9391,
+              1.0445
+            ],
+            "delta_log": 0.1398,
+            "delta": 0.15
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0628,
+              0.0435
+            ],
+            "CI90_HR": [
+              0.9391,
+              1.0445
+            ],
+            "delta_log": 0.1823,
+            "delta": 0.2
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0628,
+              0.0435
+            ],
+            "CI90_HR": [
+              0.9391,
+              1.0445
+            ],
+            "delta_log": 0.2231,
+            "delta": 0.25
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0628,
+              0.0435
+            ],
+            "CI90_HR": [
+              0.9391,
+              1.0445
+            ],
+            "delta_log": 0.2624,
+            "delta": 0.3
+          }
+        ]
+      },
+      "log_stars": {
+        "HR": 0.956,
+        "beta": -0.0449,
+        "SE": 0.0267,
+        "results": [
+          {
+            "p_lower": 0.029808,
+            "p_upper": 0.0,
+            "p_tost": 0.029808,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0889,
+              -0.001
+            ],
+            "CI90_HR": [
+              0.9149,
+              0.999
+            ],
+            "delta_log": 0.0953,
+            "delta": 0.1
+          },
+          {
+            "p_lower": 0.000195,
+            "p_upper": 0.0,
+            "p_tost": 0.000195,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0889,
+              -0.001
+            ],
+            "CI90_HR": [
+              0.9149,
+              0.999
+            ],
+            "delta_log": 0.1398,
+            "delta": 0.15
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0889,
+              -0.001
+            ],
+            "CI90_HR": [
+              0.9149,
+              0.999
+            ],
+            "delta_log": 0.1823,
+            "delta": 0.2
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0889,
+              -0.001
+            ],
+            "CI90_HR": [
+              0.9149,
+              0.999
+            ],
+            "delta_log": 0.2231,
+            "delta": 0.25
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0889,
+              -0.001
+            ],
+            "CI90_HR": [
+              0.9149,
+              0.999
+            ],
+            "delta_log": 0.2624,
+            "delta": 0.3
+          }
+        ]
+      }
+    },
+    "Maven": {
+      "n": 31955,
+      "events": 12465,
+      "concordance": 0.533,
+      "log_contributors": {
+        "HR": 0.8739,
+        "beta": -0.1348,
+        "SE": 0.0706,
+        "results": [
+          {
+            "p_lower": 0.712064,
+            "p_upper": 0.000557,
+            "p_tost": 0.712064,
+            "equivalent": false,
+            "CI90_beta": [
+              -0.2509,
+              -0.0187
+            ],
+            "CI90_HR": [
+              0.7781,
+              0.9815
+            ],
+            "delta_log": 0.0953,
+            "delta": 0.1
+          },
+          {
+            "p_lower": 0.471967,
+            "p_upper": 5e-05,
+            "p_tost": 0.471967,
+            "equivalent": false,
+            "CI90_beta": [
+              -0.2509,
+              -0.0187
+            ],
+            "CI90_HR": [
+              0.7781,
+              0.9815
+            ],
+            "delta_log": 0.1398,
+            "delta": 0.15
+          },
+          {
+            "p_lower": 0.250387,
+            "p_upper": 4e-06,
+            "p_tost": 0.250387,
+            "equivalent": false,
+            "CI90_beta": [
+              -0.2509,
+              -0.0187
+            ],
+            "CI90_HR": [
+              0.7781,
+              0.9815
+            ],
+            "delta_log": 0.1823,
+            "delta": 0.2
+          },
+          {
+            "p_lower": 0.105357,
+            "p_upper": 0.0,
+            "p_tost": 0.105357,
+            "equivalent": false,
+            "CI90_beta": [
+              -0.2509,
+              -0.0187
+            ],
+            "CI90_HR": [
+              0.7781,
+              0.9815
+            ],
+            "delta_log": 0.2231,
+            "delta": 0.25
+          },
+          {
+            "p_lower": 0.035362,
+            "p_upper": 0.0,
+            "p_tost": 0.035362,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.2509,
+              -0.0187
+            ],
+            "CI90_HR": [
+              0.7781,
+              0.9815
+            ],
+            "delta_log": 0.2624,
+            "delta": 0.3
+          }
+        ]
+      },
+      "log_stars": {
+        "HR": 1.0307,
+        "beta": 0.0302,
+        "SE": 0.0418,
+        "results": [
+          {
+            "p_lower": 0.001322,
+            "p_upper": 0.059541,
+            "p_tost": 0.059541,
+            "equivalent": false,
+            "CI90_beta": [
+              -0.0385,
+              0.0989
+            ],
+            "CI90_HR": [
+              0.9623,
+              1.104
+            ],
+            "delta_log": 0.0953,
+            "delta": 0.1
+          },
+          {
+            "p_lower": 2.3e-05,
+            "p_upper": 0.004355,
+            "p_tost": 0.004355,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0385,
+              0.0989
+            ],
+            "CI90_HR": [
+              0.9623,
+              1.104
+            ],
+            "delta_log": 0.1398,
+            "delta": 0.15
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.000135,
+            "p_tost": 0.000135,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0385,
+              0.0989
+            ],
+            "CI90_HR": [
+              0.9623,
+              1.104
+            ],
+            "delta_log": 0.1823,
+            "delta": 0.2
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 2e-06,
+            "p_tost": 2e-06,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0385,
+              0.0989
+            ],
+            "CI90_HR": [
+              0.9623,
+              1.104
+            ],
+            "delta_log": 0.2231,
+            "delta": 0.25
+          },
+          {
+            "p_lower": 0.0,
+            "p_upper": 0.0,
+            "p_tost": 0.0,
+            "equivalent": true,
+            "CI90_beta": [
+              -0.0385,
+              0.0989
+            ],
+            "CI90_HR": [
+              0.9623,
+              1.104
+            ],
+            "delta_log": 0.2624,
+            "delta": 0.3
+          }
+        ]
+      }
+    }
+  },
+  "baseline_reference": "sensitivity_tost_margin.json",
+  "notes": [
+    "Maven manual/total = 43855/75342 = 58.2%; same-day manual = 19792 (45.1% of manual); <=1-day manual = 20356 (46.4% of manual).",
+    "The main propagation Cox (analyze_cross_ecosystem.py) already restricts to propagation_days>0, so same-day events never entered the survival estimates; the re-fit here additionally removes the day==1 manual events.",
+    "Measured bot rates: npm 8.0% / PyPI 16.2% among classified (7.1% / 12.4% on the full sampled denominator); Maven unclassifiable (no SCM URLs).",
+    "Direction of bias: if Maven 'manual' is partly bots, the Maven manual rate is OVERSTATED. In the extreme worst case (every <=1-day manual event is a bot) Maven's human-driven manual rate falls to 31.2%, which remains an order of magnitude above npm (3.6%) but is NO LONGER guaranteed to exceed PyPI (34.5%); the qualitative contrast with npm and the three-orders-of-magnitude AUTO-propagation gap (an auto-, not manual-, quantity) are untouched.",
+    "Robustness: health-agnostic bot updates attenuate health hazard ratios toward 1 (making TOST EASIER to pass), so contamination cannot manufacture the decoupling. Re-fitting per-ecosystem TOST after excluding <=1-day manual events leaves the decoupling intact (Maven log_contributors HR moves 0.886->0.874, still equivalent only at delta=0.30; npm/PyPI remain equivalent at small margins) - the borderline Maven contributor result is NOT an artifact of bot contamination."
+  ]
+}

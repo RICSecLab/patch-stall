@@ -1,0 +1,283 @@
+{
+  "constraint_class_counts": {
+    "pinned": 25397,
+    "permissive": 6346,
+    "restrictive": 841,
+    "other": 238
+  },
+  "raw_constraint_type_counts": {
+    "pinned": 25397,
+    "range": 5387,
+    "compatible": 841,
+    "lower_bound": 517,
+    "upper_bound": 442,
+    "other": 234,
+    "exclusion": 4
+  },
+  "data_summary": {
+    "total_pypi_events": 32822,
+    "linked_to_repo": 28786,
+    "with_health_data": 28786
+  },
+  "group_sizes": {
+    "permissive": 6346,
+    "pinned": 25397,
+    "restrictive": 841,
+    "other": 238
+  },
+  "permissive_vs_pinned": {
+    "log_stars": {
+      "n_permissive": 4811,
+      "n_pinned": 23085,
+      "permissive_mean": 10.4058,
+      "permissive_median": 10.6451,
+      "permissive_std": 1.5226,
+      "pinned_mean": 10.5972,
+      "pinned_median": 11.3746,
+      "pinned_std": 1.8259,
+      "mann_whitney_U": 47663859.5,
+      "mann_whitney_p": 0.0,
+      "cohens_d": -0.1077,
+      "SMD": 0.1077,
+      "balance": "mild_imbalance"
+    },
+    "log_contributors": {
+      "n_permissive": 4811,
+      "n_pinned": 23085,
+      "permissive_mean": 7.0595,
+      "permissive_median": 6.9707,
+      "permissive_std": 1.3564,
+      "pinned_mean": 7.2218,
+      "pinned_median": 8.1333,
+      "pinned_std": 1.4838,
+      "mann_whitney_U": 47757831.0,
+      "mann_whitney_p": 0.0,
+      "cohens_d": -0.111,
+      "SMD": 0.111,
+      "balance": "mild_imbalance"
+    },
+    "age_years": {
+      "n_permissive": 4811,
+      "n_pinned": 23085,
+      "permissive_mean": 10.2071,
+      "permissive_median": 10.3107,
+      "permissive_std": 3.7663,
+      "pinned_mean": 11.542,
+      "pinned_median": 10.3107,
+      "pinned_std": 2.5,
+      "mann_whitney_U": 45250061.5,
+      "mann_whitney_p": 0.0,
+      "cohens_d": -0.4836,
+      "SMD": 0.4836,
+      "balance": "substantial_imbalance"
+    },
+    "n_dependents": {
+      "n_permissive": 6346,
+      "n_pinned": 25397,
+      "permissive_mean": 70.8167,
+      "permissive_median": 87.0,
+      "permissive_std": 42.2134,
+      "pinned_mean": 60.2599,
+      "pinned_median": 53.0,
+      "pinned_std": 35.4567,
+      "mann_whitney_U": 90986551.5,
+      "mann_whitney_p": 0.0,
+      "cohens_d": 0.286,
+      "SMD": 0.286,
+      "balance": "substantial_imbalance"
+    },
+    "cvss_score": {
+      "n_permissive": 5822,
+      "n_pinned": 23803,
+      "permissive_mean": 6.5976,
+      "permissive_median": 7.0,
+      "permissive_std": 1.6617,
+      "pinned_mean": 6.6156,
+      "pinned_median": 6.5,
+      "pinned_std": 1.5146,
+      "mann_whitney_U": 68437186.5,
+      "mann_whitney_p": 0.142133,
+      "cohens_d": -0.0116,
+      "SMD": 0.0116,
+      "balance": "balanced"
+    }
+  },
+  "permissive_vs_restrictive": {
+    "log_stars": {
+      "n_permissive": 4811,
+      "n_pinned": 696,
+      "permissive_mean": 10.4058,
+      "permissive_median": 10.6451,
+      "permissive_std": 1.5226,
+      "pinned_mean": 9.7734,
+      "pinned_median": 9.7077,
+      "pinned_std": 1.386,
+      "mann_whitney_U": 2131965.0,
+      "mann_whitney_p": 0.0,
+      "cohens_d": 0.42,
+      "SMD": 0.42,
+      "balance": "substantial_imbalance"
+    },
+    "log_contributors": {
+      "n_permissive": 4811,
+      "n_pinned": 696,
+      "permissive_mean": 7.0595,
+      "permissive_median": 6.9707,
+      "permissive_std": 1.3564,
+      "pinned_mean": 6.5281,
+      "pinned_median": 6.5338,
+      "pinned_std": 1.2457,
+      "mann_whitney_U": 2043558.5,
+      "mann_whitney_p": 0.0,
+      "cohens_d": 0.3957,
+      "SMD": 0.3957,
+      "balance": "substantial_imbalance"
+    },
+    "age_years": {
+      "n_permissive": 4811,
+      "n_pinned": 696,
+      "permissive_mean": 10.2071,
+      "permissive_median": 10.3107,
+      "permissive_std": 3.7663,
+      "pinned_mean": 11.3351,
+      "pinned_median": 12.4107,
+      "pinned_std": 3.4436,
+      "mann_whitney_U": 1422589.5,
+      "mann_whitney_p": 0.0,
+      "cohens_d": -0.3027,
+      "SMD": 0.3027,
+      "balance": "substantial_imbalance"
+    },
+    "n_dependents": {
+      "n_permissive": 6346,
+      "n_pinned": 841,
+      "permissive_mean": 70.8167,
+      "permissive_median": 87.0,
+      "permissive_std": 42.2134,
+      "pinned_mean": 68.6445,
+      "pinned_median": 85.0,
+      "pinned_std": 36.9638,
+      "mann_whitney_U": 2683466.0,
+      "mann_whitney_p": 0.789787,
+      "cohens_d": 0.0522,
+      "SMD": 0.0522,
+      "balance": "balanced"
+    },
+    "cvss_score": {
+      "n_permissive": 5822,
+      "n_pinned": 793,
+      "permissive_mean": 6.5976,
+      "permissive_median": 7.0,
+      "permissive_std": 1.6617,
+      "pinned_mean": 6.6414,
+      "pinned_median": 7.2,
+      "pinned_std": 1.7315,
+      "mann_whitney_U": 2276354.5,
+      "mann_whitney_p": 0.522156,
+      "cohens_d": -0.0262,
+      "SMD": 0.0262,
+      "balance": "balanced"
+    }
+  },
+  "balance_summary": {
+    "permissive_vs_pinned": {
+      "log_stars": {
+        "SMD": 0.1077,
+        "balance": "mild_imbalance"
+      },
+      "log_contributors": {
+        "SMD": 0.111,
+        "balance": "mild_imbalance"
+      },
+      "age_years": {
+        "SMD": 0.4836,
+        "balance": "substantial_imbalance"
+      },
+      "n_dependents": {
+        "SMD": 0.286,
+        "balance": "substantial_imbalance"
+      },
+      "cvss_score": {
+        "SMD": 0.0116,
+        "balance": "balanced"
+      },
+      "_overall": {
+        "max_SMD": 0.4836,
+        "mean_SMD": 0.2,
+        "n_balanced": 1,
+        "n_mild_imbalance": 2,
+        "n_substantial_imbalance": 2
+      }
+    },
+    "permissive_vs_restrictive": {
+      "log_stars": {
+        "SMD": 0.42,
+        "balance": "substantial_imbalance"
+      },
+      "log_contributors": {
+        "SMD": 0.3957,
+        "balance": "substantial_imbalance"
+      },
+      "age_years": {
+        "SMD": 0.3027,
+        "balance": "substantial_imbalance"
+      },
+      "n_dependents": {
+        "SMD": 0.0522,
+        "balance": "balanced"
+      },
+      "cvss_score": {
+        "SMD": 0.0262,
+        "balance": "balanced"
+      },
+      "_overall": {
+        "max_SMD": 0.42,
+        "mean_SMD": 0.2394,
+        "n_balanced": 2,
+        "n_mild_imbalance": 0,
+        "n_substantial_imbalance": 3
+      }
+    }
+  },
+  "propagation_outcome_by_class": {
+    "permissive": {
+      "n_total": 6346,
+      "n_auto": 1081,
+      "n_manual": 2267,
+      "n_censored": 2998,
+      "auto_rate": 0.1703,
+      "manual_of_nonauto": 0.4306
+    },
+    "pinned": {
+      "n_total": 25397,
+      "n_auto": 6,
+      "n_manual": 9435,
+      "n_censored": 15956,
+      "auto_rate": 0.0002,
+      "manual_of_nonauto": 0.3716
+    },
+    "restrictive": {
+      "n_total": 841,
+      "n_auto": 17,
+      "n_manual": 311,
+      "n_censored": 513,
+      "auto_rate": 0.0202,
+      "manual_of_nonauto": 0.3774
+    }
+  },
+  "propagation_speed_comparison": {
+    "n_permissive": 5083,
+    "n_pinned": 25016,
+    "permissive_mean": 560.6978,
+    "permissive_median": 435.0,
+    "permissive_std": 569.2514,
+    "pinned_mean": 856.8591,
+    "pinned_median": 763.0,
+    "pinned_std": 699.8234,
+    "mann_whitney_U": 49217322.5,
+    "mann_whitney_p": 0.0,
+    "cohens_d": -0.4358,
+    "SMD": 0.4358,
+    "balance": "substantial_imbalance"
+  }
+}

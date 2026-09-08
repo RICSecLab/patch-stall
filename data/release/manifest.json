@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-09-08T08:20:24.979550+00:00",
+  "generator": "scripts/normalize_for_release.py",
+  "observation_cutoff": "2026-03-01",
+  "data_freeze": "2026-03-07",
+  "tables": {
+    "advisories.csv": {
+      "rows": 26288,
+      "sha256": "c458f89d668a33d90649cea71e9c5c2cd645801d29e9114debc596dfd10e0654",
+      "size_bytes": 3514439
+    },
+    "repositories.csv": {
+      "rows": 3000,
+      "sha256": "0cb93f20128d8a40e051e2f04df02c3a829b30133952b17ce5f75eee727b32d6",
+      "size_bytes": 320045
+    },
+    "patch_timing.csv": {
+      "rows": 19883,
+      "sha256": "3cc58c9e34a78c349f4fd58a2427083388d8e2be42dff2e98fc337915a3c8f31",
+      "size_bytes": 2195404
+    },
+    "propagation_events.csv": {
+      "rows": 126266,
+      "sha256": "cff4a77fdb431d32a68a26fd3f87301898d9a38158f18a667cc70a5b0878efba",
+      "size_bytes": 19899827
+    }
+  },
+  "source_hashes": {
+    "cross_ecosystem_base.csv": "ee5e650c286eac4ecc3606644290b647f396a0e919cbd14ced513d9013169829",
+    "cross_ecosystem_repos.csv": "f5a882b056c1af6d0d6193c99dc84fa2a2aac0f3e4852c4f35392a33e3bac810",
+    "git_tag_dates.csv": "29a7995a4c03f140f17c6b1650f9cd7d55f3abc839e2ede5d04d6b7fdd2c91b8",
+    "github_repo_health.csv": "72216986e964c5beffaaa3112b6ccc56f8cbbc2cc56e012f443e1fa3af032ec0",
+    "maven_propagation.csv": "76e22f8b5f76d75028a503c3f6d1917cfbe01bbd12674e5c77ff440b85d12042",
+    "npm_propagation.csv": "7606ca48b03dbfb93bd4fb2b02fa01b71c8dc1a9c5c08da095e78172cd093aea",
+    "osv_severity_index.csv": "3d42b81ce413a487fe7b6297eb037bd7e721a776191218b0a7f5d3a74840254b",
+    "patch_dates_merged.csv": "c73c219169589742ba6da8b50e80195285d9b4bb887b8a44e58a659eb7069ada",
+    "patch_release_dates.csv": "dda974976698354171e73cf24be52800f2ff2faf8651be1675aa7e69be087fb6",
+    "pypi_propagation.csv": "bba8fd4ac8a58fc662b8710a145a0bd646b7a09703c55f51c8963c5113c75637"
+  }
+}

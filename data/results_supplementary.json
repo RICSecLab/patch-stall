@@ -1,0 +1,95 @@
+{
+  "multicollinearity": {
+    "npm": {
+      "n": 10297,
+      "pearson_r_health": 0.905,
+      "vif": {
+        "is_permissive": 9.17,
+        "is_restrictive": 1.23,
+        "is_runtime": 1.82,
+        "requires_major": 3.98,
+        "cvss_score": 14.39,
+        "log_contributors": 121.13,
+        "log_stars": 137.2
+      }
+    },
+    "PyPI": {
+      "n": 27257,
+      "pearson_r_health": 0.942,
+      "vif": {
+        "is_permissive": 1.69,
+        "is_restrictive": 1.03,
+        "requires_major": 1.58,
+        "cvss_score": 13.68,
+        "log_contributors": 212.75,
+        "log_stars": 252.5
+      }
+    },
+    "Maven": {
+      "n": 32369,
+      "pearson_r_health": 0.791,
+      "vif": {
+        "is_permissive": 1.03,
+        "requires_major": 1.08,
+        "cvss_score": 12.43,
+        "log_contributors": 66.36,
+        "log_stars": 55.27
+      }
+    }
+  },
+  "joint_lrt_health": {
+    "npm": {
+      "ll_full": -5024.44,
+      "ll_restricted": -5027.13,
+      "lrt_chi2": 5.37,
+      "lrt_df": 2,
+      "lrt_p": 0.068053,
+      "significant": "False"
+    },
+    "PyPI": {
+      "ll_full": -100577.06,
+      "ll_restricted": -100631.71,
+      "lrt_chi2": 109.29,
+      "lrt_df": 2,
+      "lrt_p": 0.0,
+      "significant": "True"
+    },
+    "Maven": {
+      "ll_full": -129922.43,
+      "ll_restricted": -129986.03,
+      "lrt_chi2": 127.18,
+      "lrt_df": 2,
+      "lrt_p": 0.0,
+      "significant": "True"
+    }
+  },
+  "censoring_rates": {
+    "npm": {
+      "total": 18102,
+      "auto": 4749,
+      "manual": 678,
+      "censored": 12675,
+      "non_auto_total": 13353,
+      "non_auto_censored": 12675,
+      "non_auto_censor_rate": 0.949
+    },
+    "PyPI": {
+      "total": 32822,
+      "auto": 1113,
+      "manual": 12154,
+      "censored": 19555,
+      "non_auto_total": 31709,
+      "non_auto_censored": 19555,
+      "non_auto_censor_rate": 0.617
+    },
+    "Maven": {
+      "total": 75342,
+      "auto": 4,
+      "manual": 43855,
+      "censored": 31483,
+      "non_auto_total": 75338,
+      "non_auto_censored": 31483,
+      "non_auto_censor_rate": 0.418
+    }
+  }
+}

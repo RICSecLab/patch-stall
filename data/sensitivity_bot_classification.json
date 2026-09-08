@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-04-12T17:28:54.148017Z",
+  "sample_size_requested": 500,
+  "seed": 42,
+  "dry_run": false,
+  "total_api_calls": 696,
+  "ecosystems": {
+    "npm": {
+      "total": 352,
+      "bot_rate": 0.07102272727272728,
+      "dependabot_rate": 0.019886363636363636,
+      "renovate_rate": 0.002840909090909091,
+      "other_bot_rate": 0.048295454545454544,
+      "human_rate": 0.8210227272727273,
+      "unknown_rate": 0.10795454545454546,
+      "counts": {
+        "dependabot": 7,
+        "renovate": 1,
+        "other_bot": 17,
+        "human": 289,
+        "unknown": 38
+      }
+    },
+    "pypi": {
+      "total": 500,
+      "bot_rate": 0.124,
+      "dependabot_rate": 0.102,
+      "renovate_rate": 0.012,
+      "other_bot_rate": 0.01,
+      "human_rate": 0.64,
+      "unknown_rate": 0.236,
+      "counts": {
+        "dependabot": 51,
+        "renovate": 6,
+        "other_bot": 5,
+        "human": 320,
+        "unknown": 118
+      }
+    },
+    "maven": {
+      "total": 499,
+      "bot_rate": 0.0,
+      "dependabot_rate": 0.0,
+      "renovate_rate": 0.0,
+      "other_bot_rate": 0.0,
+      "human_rate": 0.0,
+      "unknown_rate": 1.0,
+      "counts": {
+        "dependabot": 0,
+        "renovate": 0,
+        "other_bot": 0,
+        "human": 0,
+        "unknown": 499
+      }
+    }
+  },
+  "overall": {
+    "total": 1351,
+    "bot_rate": 0.06439674315321983,
+    "dependabot_rate": 0.04293116210214656,
+    "renovate_rate": 0.0051813471502590676,
+    "other_bot_rate": 0.01628423390081421,
+    "human_rate": 0.45077720207253885,
+    "unknown_rate": 0.4848260547742413,
+    "counts": {
+      "dependabot": 58,
+      "renovate": 7,
+      "other_bot": 22,
+      "human": 609,
+      "unknown": 655
+    }
+  }
+}

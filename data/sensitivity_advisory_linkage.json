@@ -1,0 +1,267 @@
+{
+  "patch_availability_all": {
+    "npm": {
+      "n": 6391,
+      "patched": 4874,
+      "rate": 0.763
+    },
+    "PyPI": {
+      "n": 9244,
+      "patched": 8600,
+      "rate": 0.93
+    },
+    "Maven": {
+      "n": 10653,
+      "patched": 9108,
+      "rate": 0.855
+    },
+    "npm_CRITICAL": {
+      "n": 1305,
+      "rate": 0.524
+    },
+    "PyPI_CRITICAL": {
+      "n": 757,
+      "rate": 0.869
+    },
+    "Maven_CRITICAL": {
+      "n": 1597,
+      "rate": 0.886
+    },
+    "npm_HIGH": {
+      "n": 2575,
+      "rate": 0.777
+    },
+    "PyPI_HIGH": {
+      "n": 3011,
+      "rate": 0.916
+    },
+    "Maven_HIGH": {
+      "n": 3471,
+      "rate": 0.876
+    },
+    "npm_MEDIUM": {
+      "n": 2117,
+      "rate": 0.873
+    },
+    "PyPI_MEDIUM": {
+      "n": 3927,
+      "rate": 0.937
+    },
+    "Maven_MEDIUM": {
+      "n": 4988,
+      "rate": 0.84
+    },
+    "npm_LOW": {
+      "n": 392,
+      "rate": 0.867
+    },
+    "PyPI_LOW": {
+      "n": 1549,
+      "rate": 0.97
+    },
+    "Maven_LOW": {
+      "n": 595,
+      "rate": 0.775
+    }
+  },
+  "patch_availability_linked_only": {
+    "npm": {
+      "n": 3365,
+      "patched": 3219,
+      "rate": 0.957
+    },
+    "PyPI": {
+      "n": 7213,
+      "patched": 7064,
+      "rate": 0.979
+    },
+    "Maven": {
+      "n": 5989,
+      "patched": 5671,
+      "rate": 0.947
+    },
+    "npm_CRITICAL": {
+      "n": 549,
+      "rate": 0.92
+    },
+    "PyPI_CRITICAL": {
+      "n": 497,
+      "rate": 0.938
+    },
+    "Maven_CRITICAL": {
+      "n": 948,
+      "rate": 0.962
+    },
+    "npm_HIGH": {
+      "n": 1372,
+      "rate": 0.963
+    },
+    "PyPI_HIGH": {
+      "n": 2209,
+      "rate": 0.977
+    },
+    "Maven_HIGH": {
+      "n": 2013,
+      "rate": 0.955
+    },
+    "npm_MEDIUM": {
+      "n": 1263,
+      "rate": 0.965
+    },
+    "PyPI_MEDIUM": {
+      "n": 3090,
+      "rate": 0.984
+    },
+    "Maven_MEDIUM": {
+      "n": 2714,
+      "rate": 0.939
+    },
+    "npm_LOW": {
+      "n": 181,
+      "rate": 0.961
+    },
+    "PyPI_LOW": {
+      "n": 1417,
+      "rate": 0.987
+    },
+    "Maven_LOW": {
+      "n": 314,
+      "rate": 0.914
+    }
+  },
+  "cox_all": {
+    "n": 15092,
+    "events": 14481,
+    "concordance": 0.744,
+    "covariates": {
+      "is_critical": {
+        "HR": 0.92,
+        "p": 0.0025,
+        "CI": [
+          0.871,
+          0.971
+        ]
+      },
+      "is_high": {
+        "HR": 1.053,
+        "p": 0.0077,
+        "CI": [
+          1.014,
+          1.093
+        ]
+      },
+      "is_low": {
+        "HR": 0.427,
+        "p": 0.0,
+        "CI": [
+          0.403,
+          0.452
+        ]
+      },
+      "log_contributors": {
+        "HR": 1.06,
+        "p": 0.0,
+        "CI": [
+          1.041,
+          1.08
+        ]
+      },
+      "log_stars": {
+        "HR": 0.975,
+        "p": 0.0,
+        "CI": [
+          0.963,
+          0.986
+        ]
+      },
+      "age_years": {
+        "HR": 1.008,
+        "p": 0.0039,
+        "CI": [
+          1.003,
+          1.013
+        ]
+      }
+    }
+  },
+  "cox_linked_only": {
+    "n": 15092,
+    "events": 14481,
+    "concordance": 0.744,
+    "covariates": {
+      "is_critical": {
+        "HR": 0.92,
+        "p": 0.0025,
+        "CI": [
+          0.871,
+          0.971
+        ]
+      },
+      "is_high": {
+        "HR": 1.053,
+        "p": 0.0077,
+        "CI": [
+          1.014,
+          1.093
+        ]
+      },
+      "is_low": {
+        "HR": 0.427,
+        "p": 0.0,
+        "CI": [
+          0.403,
+          0.452
+        ]
+      },
+      "log_contributors": {
+        "HR": 1.06,
+        "p": 0.0,
+        "CI": [
+          1.041,
+          1.08
+        ]
+      },
+      "log_stars": {
+        "HR": 0.975,
+        "p": 0.0,
+        "CI": [
+          0.963,
+          0.986
+        ]
+      },
+      "age_years": {
+        "HR": 1.008,
+        "p": 0.0039,
+        "CI": [
+          1.003,
+          1.013
+        ]
+      }
+    }
+  },
+  "logrank_linked_only": {
+    "npm_vs_PyPI": {
+      "chi2": 10.9,
+      "p": 0.000967
+    },
+    "npm_vs_Maven": {
+      "chi2": 20.2,
+      "p": 7e-06
+    },
+    "PyPI_vs_Maven": {
+      "chi2": 15.4,
+      "p": 8.8e-05
+    }
+  },
+  "selection_model": {
+    "n": 20145,
+    "events": 16439,
+    "concordance": 0.795,
+    "has_repo_HR": 5.118,
+    "has_repo_p": 0.0,
+    "has_repo_CI": [
+      4.875,
+      5.373
+    ]
+  }
+}

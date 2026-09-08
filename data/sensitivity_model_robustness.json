@@ -1,0 +1,696 @@
+{
+  "q1_correlation": 0.882,
+  "q1_pca": {
+    "variance_explained": [
+      0.9412,
+      0.0588
+    ],
+    "loadings_pc1": {
+      "log_contributors": 0.707,
+      "log_stars": 0.707
+    },
+    "loadings_pc2": {
+      "log_contributors": 0.707,
+      "log_stars": -0.707
+    }
+  },
+  "q1_models": {
+    "full_model": {
+      "concordance": 0.744,
+      "n": 15092,
+      "events": 14481,
+      "covariates": {
+        "is_critical": {
+          "HR": 0.92,
+          "p": 0.0025,
+          "CI": [
+            0.871,
+            0.971
+          ]
+        },
+        "is_high": {
+          "HR": 1.053,
+          "p": 0.0077,
+          "CI": [
+            1.014,
+            1.093
+          ]
+        },
+        "is_low": {
+          "HR": 0.427,
+          "p": 0.0,
+          "CI": [
+            0.403,
+            0.452
+          ]
+        },
+        "log_contributors": {
+          "HR": 1.06,
+          "p": 0.0,
+          "CI": [
+            1.041,
+            1.08
+          ]
+        },
+        "log_stars": {
+          "HR": 0.975,
+          "p": 0.0,
+          "CI": [
+            0.963,
+            0.986
+          ]
+        },
+        "age_years": {
+          "HR": 1.008,
+          "p": 0.0039,
+          "CI": [
+            1.003,
+            1.013
+          ]
+        }
+      }
+    },
+    "contributors_only": {
+      "concordance": 0.736,
+      "n": 15092,
+      "events": 14481,
+      "covariates": {
+        "is_critical": {
+          "HR": 0.921,
+          "p": 0.0028,
+          "CI": [
+            0.872,
+            0.972
+          ]
+        },
+        "is_high": {
+          "HR": 1.051,
+          "p": 0.0093,
+          "CI": [
+            1.012,
+            1.092
+          ]
+        },
+        "is_low": {
+          "HR": 0.425,
+          "p": 0.0,
+          "CI": [
+            0.401,
+            0.45
+          ]
+        },
+        "log_contributors": {
+          "HR": 1.027,
+          "p": 0.0,
+          "CI": [
+            1.016,
+            1.037
+          ]
+        },
+        "age_years": {
+          "HR": 1.008,
+          "p": 0.0025,
+          "CI": [
+            1.003,
+            1.014
+          ]
+        }
+      }
+    },
+    "stars_only": {
+      "concordance": 0.733,
+      "n": 15092,
+      "events": 14481,
+      "covariates": {
+        "is_critical": {
+          "HR": 0.911,
+          "p": 0.0007,
+          "CI": [
+            0.862,
+            0.961
+          ]
+        },
+        "is_high": {
+          "HR": 1.045,
+          "p": 0.0231,
+          "CI": [
+            1.006,
+            1.085
+          ]
+        },
+        "is_low": {
+          "HR": 0.433,
+          "p": 0.0,
+          "CI": [
+            0.408,
+            0.458
+          ]
+        },
+        "log_stars": {
+          "HR": 1.006,
+          "p": 0.0598,
+          "CI": [
+            1.0,
+            1.013
+          ]
+        },
+        "age_years": {
+          "HR": 1.01,
+          "p": 0.0003,
+          "CI": [
+            1.005,
+            1.015
+          ]
+        }
+      }
+    },
+    "pca_model": {
+      "concordance": 0.735,
+      "n": 15092,
+      "events": 14481,
+      "covariates": {
+        "is_critical": {
+          "HR": 0.916,
+          "p": 0.0015,
+          "CI": [
+            0.867,
+            0.967
+          ]
+        },
+        "is_high": {
+          "HR": 1.048,
+          "p": 0.0149,
+          "CI": [
+            1.009,
+            1.088
+          ]
+        },
+        "is_low": {
+          "HR": 0.428,
+          "p": 0.0,
+          "CI": [
+            0.405,
+            0.454
+          ]
+        },
+        "health_pc1": {
+          "HR": 1.027,
+          "p": 0.0003,
+          "CI": [
+            1.012,
+            1.043
+          ]
+        },
+        "age_years": {
+          "HR": 1.009,
+          "p": 0.0009,
+          "CI": [
+            1.004,
+            1.014
+          ]
+        }
+      }
+    },
+    "pca2_model": {
+      "concordance": 0.745,
+      "n": 15092,
+      "events": 14481,
+      "covariates": {
+        "is_critical": {
+          "HR": 0.92,
+          "p": 0.0026,
+          "CI": [
+            0.871,
+            0.971
+          ]
+        },
+        "is_high": {
+          "HR": 1.053,
+          "p": 0.0073,
+          "CI": [
+            1.014,
+            1.094
+          ]
+        },
+        "is_low": {
+          "HR": 0.426,
+          "p": 0.0,
+          "CI": [
+            0.403,
+            0.452
+          ]
+        },
+        "health_pc1": {
+          "HR": 1.031,
+          "p": 0.0,
+          "CI": [
+            1.016,
+            1.047
+          ]
+        },
+        "health_pc2": {
+          "HR": 1.162,
+          "p": 0.0,
+          "CI": [
+            1.104,
+            1.222
+          ]
+        },
+        "age_years": {
+          "HR": 1.008,
+          "p": 0.0044,
+          "CI": [
+            1.002,
+            1.013
+          ]
+        }
+      }
+    }
+  },
+  "q2_cap_rates": {
+    "npm": {
+      "n_advisories": 819,
+      "n_at_cap": 42,
+      "n_below_cap": 777,
+      "pct_at_cap": 5.1,
+      "median_dependents": 4.0,
+      "mean_dependents": 22.1,
+      "p25": 2.0,
+      "p75": 12.0
+    },
+    "PyPI": {
+      "n_advisories": 1333,
+      "n_at_cap": 65,
+      "n_below_cap": 1268,
+      "pct_at_cap": 4.9,
+      "median_dependents": 9.0,
+      "mean_dependents": 24.6,
+      "p25": 2.0,
+      "p75": 45.0
+    },
+    "Maven": {
+      "n_advisories": 2392,
+      "n_at_cap": 357,
+      "n_below_cap": 2035,
+      "pct_at_cap": 14.9,
+      "median_dependents": 12.0,
+      "mean_dependents": 31.5,
+      "p25": 3.0,
+      "p75": 46.0
+    }
+  },
+  "q2_sensitivity": {
+    "uncapped": {
+      "n": 50641,
+      "events": 17287,
+      "concordance": 0.516,
+      "covariates": {
+        "is_permissive": {
+          "HR": 1.291,
+          "p": 0.0,
+          "CI": [
+            1.164,
+            1.433
+          ]
+        },
+        "is_restrictive": {
+          "HR": 1.16,
+          "p": 0.0119,
+          "CI": [
+            1.033,
+            1.302
+          ]
+        },
+        "is_runtime": {
+          "HR": 1.141,
+          "p": 0.2431,
+          "CI": [
+            0.914,
+            1.423
+          ]
+        },
+        "requires_major": {
+          "HR": 0.75,
+          "p": 0.0051,
+          "CI": [
+            0.614,
+            0.917
+          ]
+        },
+        "cvss_score": {
+          "HR": 1.003,
+          "p": 0.8184,
+          "CI": [
+            0.976,
+            1.031
+          ]
+        }
+      }
+    },
+    "capped": {
+      "n": 49335,
+      "events": 19043,
+      "concordance": 0.523,
+      "covariates": {
+        "is_permissive": {
+          "HR": 1.503,
+          "p": 0.0,
+          "CI": [
+            1.238,
+            1.824
+          ]
+        },
+        "is_restrictive": {
+          "HR": 1.089,
+          "p": 0.4124,
+          "CI": [
+            0.888,
+            1.334
+          ]
+        },
+        "is_runtime": {
+          "HR": 0.92,
+          "p": 0.391,
+          "CI": [
+            0.761,
+            1.113
+          ]
+        },
+        "requires_major": {
+          "HR": 0.662,
+          "p": 0.008,
+          "CI": [
+            0.488,
+            0.898
+          ]
+        },
+        "cvss_score": {
+          "HR": 0.993,
+          "p": 0.7675,
+          "CI": [
+            0.948,
+            1.04
+          ]
+        }
+      }
+    },
+    "all": {
+      "n": 99976,
+      "events": 36330,
+      "concordance": 0.512,
+      "covariates": {
+        "is_permissive": {
+          "HR": 1.365,
+          "p": 0.0,
+          "CI": [
+            1.241,
+            1.5
+          ]
+        },
+        "is_restrictive": {
+          "HR": 1.154,
+          "p": 0.0058,
+          "CI": [
+            1.042,
+            1.277
+          ]
+        },
+        "is_runtime": {
+          "HR": 1.08,
+          "p": 0.3629,
+          "CI": [
+            0.915,
+            1.275
+          ]
+        },
+        "requires_major": {
+          "HR": 0.702,
+          "p": 0.0001,
+          "CI": [
+            0.588,
+            0.837
+          ]
+        },
+        "cvss_score": {
+          "HR": 1.006,
+          "p": 0.6497,
+          "CI": [
+            0.979,
+            1.034
+          ]
+        }
+      }
+    }
+  },
+  "q3_pre_advisory": {
+    "total": 16450,
+    "n_negative": 14368,
+    "n_zero": 0,
+    "n_positive": 2082,
+    "pct_negative": 87.3,
+    "median_negative_days": -17.2,
+    "per_ecosystem": {
+      "npm": {
+        "total": 4326,
+        "n_pre_advisory": 4063,
+        "pct_pre_advisory": 93.9
+      },
+      "PyPI": {
+        "total": 7632,
+        "n_pre_advisory": 6067,
+        "pct_pre_advisory": 79.5
+      },
+      "Maven": {
+        "total": 4492,
+        "n_pre_advisory": 4238,
+        "pct_pre_advisory": 94.3
+      }
+    }
+  },
+  "q3_treatment": {
+    "method": "clip_to_0.5_days",
+    "rationale": "Pre-advisory patches represent responsible disclosure; patch was available at disclosure. Clipped to 0.5 days (immediate event) in survival analysis.",
+    "code_reference": "build_patch_latency_merged() line 152: with_date['patch_latency_days'] = with_date['patch_latency_days'].clip(lower=0.5)"
+  },
+  "q4_per_ecosystem": {
+    "npm": {
+      "n": 13295,
+      "events": 678,
+      "concordance": 0.573,
+      "covariates": {
+        "is_permissive": {
+          "HR": 0.873,
+          "p": 0.2953,
+          "CI": [
+            0.677,
+            1.126
+          ]
+        },
+        "is_restrictive": {
+          "HR": 1.573,
+          "p": 0.0134,
+          "CI": [
+            1.099,
+            2.253
+          ]
+        },
+        "is_runtime": {
+          "HR": 1.035,
+          "p": 0.7566,
+          "CI": [
+            0.833,
+            1.286
+          ]
+        },
+        "requires_major": {
+          "HR": 0.572,
+          "p": 0.0,
+          "CI": [
+            0.447,
+            0.733
+          ]
+        },
+        "cvss_score": {
+          "HR": 0.974,
+          "p": 0.5238,
+          "CI": [
+            0.897,
+            1.057
+          ]
+        }
+      }
+    },
+    "PyPI": {
+      "n": 31136,
+      "events": 11589,
+      "concordance": 0.526,
+      "covariates": {
+        "is_permissive": {
+          "HR": 1.363,
+          "p": 0.0,
+          "CI": [
+            1.254,
+            1.482
+          ]
+        },
+        "is_restrictive": {
+          "HR": 1.095,
+          "p": 0.0832,
+          "CI": [
+            0.988,
+            1.214
+          ]
+        },
+        "requires_major": {
+          "HR": 0.861,
+          "p": 0.1172,
+          "CI": [
+            0.715,
+            1.038
+          ]
+        },
+        "cvss_score": {
+          "HR": 1.016,
+          "p": 0.1491,
+          "CI": [
+            0.994,
+            1.039
+          ]
+        }
+      }
+    },
+    "Maven": {
+      "n": 55545,
+      "events": 24063,
+      "concordance": 0.512,
+      "covariates": {
+        "is_permissive": {
+          "HR": 0.453,
+          "p": 0.0182,
+          "CI": [
+            0.234,
+            0.874
+          ]
+        },
+        "requires_major": {
+          "HR": 0.6,
+          "p": 0.0026,
+          "CI": [
+            0.431,
+            0.837
+          ]
+        },
+        "cvss_score": {
+          "HR": 1.003,
+          "p": 0.8756,
+          "CI": [
+            0.965,
+            1.042
+          ]
+        }
+      }
+    }
+  },
+  "q4_interaction_model": {
+    "n": 99976,
+    "events": 36330,
+    "concordance": 0.515,
+    "covariates": {
+      "is_permissive": {
+        "HR": 0.913,
+        "p": 0.0336,
+        "CI": [
+          0.84,
+          0.993
+        ]
+      },
+      "is_restrictive": {
+        "HR": 1.102,
+        "p": 0.0016,
+        "CI": [
+          1.038,
+          1.171
+        ]
+      },
+      "is_runtime": {
+        "HR": 1.033,
+        "p": 0.6948,
+        "CI": [
+          0.878,
+          1.215
+        ]
+      },
+      "requires_major": {
+        "HR": 0.689,
+        "p": 0.0,
+        "CI": [
+          0.579,
+          0.822
+        ]
+      },
+      "cvss_score": {
+        "HR": 1.006,
+        "p": 0.6408,
+        "CI": [
+          0.98,
+          1.034
+        ]
+      },
+      "permissive_x_npm": {
+        "HR": 0.945,
+        "p": 0.3413,
+        "CI": [
+          0.842,
+          1.061
+        ]
+      },
+      "permissive_x_pypi": {
+        "HR": 1.63,
+        "p": 0.0,
+        "CI": [
+          1.466,
+          1.812
+        ]
+      },
+      "restrictive_x_npm": {
+        "HR": 1.456,
+        "p": 0.0127,
+        "CI": [
+          1.083,
+          1.957
+        ]
+      },
+      "restrictive_x_pypi": {
+        "HR": 0.993,
+        "p": 0.871,
+        "CI": [
+          0.918,
+          1.076
+        ]
+      }
+    }
+  },
+  "q4_eco_specific_permissive_hr": {
+    "Maven": {
+      "HR": 0.913,
+      "beta": -0.091
+    },
+    "npm": {
+      "HR": 0.863,
+      "beta": -0.1471
+    },
+    "PyPI": {
+      "HR": 1.488,
+      "beta": 0.3975
+    }
+  },
+  "q4_lrt": {
+    "lrt_statistic": 89.9,
+    "df": 4,
+    "p": 0.0,
+    "ll_interaction": -377461.1,
+    "ll_no_interaction": -377506.05,
+    "concordance_no_interaction": 0.512,
+    "concordance_interaction": 0.515
+  }
+}
